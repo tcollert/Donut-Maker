@@ -4,10 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container"><img src="./img/AdobeStock_451004451 (1).jpeg" />
+      <header class="headline">
+        <h1>Fred the Baker Baking Company</h1>
+        <nav class="header-nav">
+          <ul>
+            <li>
+              <div class="header-link" id="company-info-link">
+                Company's information
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://orteil.dashnet.org/cookieclicker/"
+                target="_blank"
+                class="header-link"
+                >Inspiration: Cookie Clicker</a
+              >
+            </li>
+            <li>
+              <div class="header-link dropdown-link" id="developer-dropdown">
+                Developer
+              </div>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="modal" id="company-info-modal">
+          <div class="modal-content">
+            <h2>Company's Information</h2>
+            <p>
+              Thank you for visiting Fred the Baker Baking Company! We are a
+              renowned baking company dedicated to delivering the most delicious and
+              freshly baked goods to our customers. We are located in North Bergen,
+              NJ.
+            </p>
+          </div>
+        </div>
+    
+        <div class="modal" id="developer-modal">
+          <div class="modal-content">
+            <h2>About the Developer</h2>
+            <p>Hi! My name is Chris Ryan.</p>
+            <p>For more information, visit:</p>
+            <ul>
+              <li>
+                <a href="https://chriswcci.github.io/" target="_blank">Portfolio</a>
+              </li>
+              <li>
+                <a href="https://github.com/ChrisWCCI" target="_blank">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="donut-maker" height="100" width="60">
+        <button onclick="totalClick(1)">Make Donuts</button>
+        <h2>Amount of Donuts Made</h2>
+        <span id="total-donuts">0</span>
+      </section>
+      <section class="interacts">
+        <button onclick="autoClick(1)">Purchase Auto Clicker</button>
+        <span id="auto-donuts">0</span>
+        <h2>Amount of Auto Clickers Purchased</h2>
+        <button onclick="resetClick(0)">Reset</button>
+      </section>
+    </div>
+    <footer class="copyright">Copyright &copy; 2024</footer>
     <script src="./index.js"></script>
   </body>
 </html>
