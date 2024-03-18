@@ -1,0 +1,151 @@
+.headline > h1 {
+  grid-area: headline;
+  text-align: center;
+  position: relative;
+  bottom: 750px;
+  color: rgb(0, 60, 128);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.donut-maker {
+  text-align: center;
+  position: relative;
+  bottom: 700px;
+  color: rgb(11, 14, 45);
+  -webkit-text-stroke: 1px rgb(37, 40, 68);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.interacts {
+  text-align: center;
+  position: relative;
+  bottom: 680px;
+  color: rgb(11, 14, 45);
+  -webkit-text-stroke: 1px rgb(37, 40, 68);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container > img {
+  height: 25%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  size: cover;
+  top: 0px;
+  z-index: -1;
+}
+.header-nav {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  position: relative;
+  top: -900px;
+  size: cover;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-link {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header-link:hover {
+  background-color: #32142c;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #666;
+  font-size: 20px;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  position: relative;
+  bottom: 1125px;
+}
+.copyright {
+  border: 1px #190d41 solid;
+  padding: 0.5rem;
+  grid-area: copyright;
+  text-align: center;
+  position: relative;
+  bottom: 357px;
+}
