@@ -8,7 +8,8 @@
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"><img src="./img/AdobeStock_451004451 (1).jpeg" />
+    <div class="container">
+      <img src="./img/AdobeStock_451004451 (1).jpeg" />
       <header class="headline">
         <h1>Fred the Baker Baking Company</h1>
         <nav class="header-nav">
@@ -33,46 +34,50 @@
             </li>
           </ul>
         </nav>
-    
+
         <div class="modal" id="company-info-modal">
           <div class="modal-content">
             <h2>Company's Information</h2>
             <p>
               Thank you for visiting Fred the Baker Baking Company! We are a
-              renowned baking company dedicated to delivering the most delicious and
-              freshly baked goods to our customers. We are located in North Bergen,
-              NJ.
+              renowned baking company dedicated to delivering the most delicious
+              and freshly baked goods to our customers. We are located in North
+              Bergen, NJ.
             </p>
           </div>
         </div>
-    
+
         <div class="modal" id="developer-modal">
           <div class="modal-content">
             <h2>About the Developer</h2>
-            <p>Hi! My name is Chris Ryan.</p>
+            <p>Hi! My name is Tarrah Collert.</p>
             <p>For more information, visit:</p>
             <ul>
               <li>
-                <a href="https://chriswcci.github.io/" target="_blank">Portfolio</a>
+                <a href="https://linkedin.com" target="_blank">Portfolio</a>
               </li>
               <li>
-                <a href="https://github.com/ChrisWCCI" target="_blank">GitHub</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
               </li>
             </ul>
           </div>
         </div>
       </header>
-      <section class="donut-maker" height="100" width="60">
-        <button onclick="totalClick(1)">Make Donuts</button>
-        <h2>Amount of Donuts Made</h2>
-        <span id="total-donuts">0</span>
-      </section>
-      <section class="interacts">
-        <button onclick="autoClick(1)">Purchase Auto Clicker</button>
-        <span id="auto-donuts">0</span>
-        <h2>Amount of Auto Clickers Purchased</h2>
-        <button onclick="resetClick(0)">Reset</button>
-      </section>
+      <container>
+        <div class="box box-1"></div>
+        <div class="donut-maker" height="100" width="60">
+          <button class="donut-button">Make Donuts</button>
+          <h2>Amount of Donuts Made</h2>
+        </div>
+        <div class="auto-clicker">
+          <button class="purchase-button">Purchase Auto Clicker</button>
+          <h2 class="display-price">One Auto Clicker = 100 Donuts</h2>
+        </div>
+        <div class="reset">
+          <button class="reset-button">Reset</button>
+          <h2>Reset Game</h2>
+        </div>
+      </container>
     </div>
     <footer class="copyright">Copyright &copy; 2024</footer>
     <script src="./index.js"></script>
