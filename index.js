@@ -3,29 +3,29 @@ let autoClickCount = 0;
 let autoClickPrice = 10;
 let donutClicks = 1;
 
-addDonut = () => {
+function addDonut() {
   if (autoClickCount == 0) {
     donutCount += 1;
   } else {
     donutCount += autoClickCount;
   }
-};
+}
 
-addAutoDonut = () => {
+function addAutoDonut() {
   if (donutCount >= autoClickCount) {
     autoClickCount += 1;
     donutCount -= autoClickCount;
   } else {
     console.log("You need at least 100 donuts to purchase an auto click");
   }
-};
+}
 
-resetGame = () => {
+function resetGame() {
   donutCount = 0;
   autoClickCount = 0;
   autoClickPrice = 100;
   donutClicks = 1;
-};
+}
 
 const countDonutsElement = document.querySelector(".donut-maker");
 const addDonutsButton = document.querySelector(".donut-button");
@@ -34,7 +34,7 @@ const autoClickButton = document.querySelector("purchase-button");
 const autoClickerCost = document.querySelector("price");
 const resetButton = document.querySelector("reset-button");
 
-const updateGame = () => {
+function updateGame(){
   countDonutsElement.innerText = donutCount;
   autoClickElement.innerText = autoClickCount;
   autoClickerCost.innerText = autoClickPrice + "Donuts";
@@ -44,23 +44,23 @@ const updateGame = () => {
   } else {
     autoClickButton.style.backgroundcolor = "grey";
   }
-};
+}
 
-const clickDonutButton = (button) => {
+const clickDonutButton = function(button){
   button.addEventListener("click", () => {
     addDonut();
     updateGame();
   });
 };
 
-const clickAutoClickButton = (button) => {
+const clickAutoClickButton = function(button) {
   button.addEventListener("click", () => {
     addAutoClicker();
     updateGame();
   });
 };
 
-const clickResetButton = (button) => {
+const clickResetButton = function(button) {
   button.addEventListener("click", () => {
     resetGame();
     updateGame();
@@ -100,29 +100,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/*function totalClick(click) {
-  const totalDonuts = document.getElementById("total-donuts");
-  const sumValue = parseInt(totalDonuts.innerText) + click;
-  console.log(sumValue + click);
-  totalDonuts.innerText = sumValue;
-}
-
-function autoClick() {
-  for (let i = 0; i < 1000; i++) {
-    document.querySelector("#auto-donuts").click();
-
-    let counter = 0;
-
-    function countUp() {
-      counter++;
-
-      const autoClick = document.getElementById("total-donuts");
-
-      console.log(autoClick, typeof autoClick, "autoClick");
-
-      autoClick.innerText = counter;
-    }
-
-    setInterval(countUp, 1000);
-  }*/
