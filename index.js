@@ -40,7 +40,7 @@ addAutoClicker = () => {
   }
 };
 
-const resetGame = () => {
+resetGame = () => {
   donutCount = 0;
   autoClickerCount = 0;
   autoClickerCost = 100;
@@ -50,14 +50,15 @@ const resetGame = () => {
 const donutCountElement = document.querySelector(".donutCount");
 const donutButton = document.querySelector(".donutButton");
 const autoClickerCountElement = document.querySelector(".autoClickerCount");
-const autoClickerButton = document.querySelector("autoClickerButton");
-const autoClickerCostElement = document.querySelector("autoClickerCost");
-const resetGameButton = document.querySelector("resetGameButton");
+const autoClickerButton = document.querySelector(".autoClickerButton");
+const autoClickerCostElement = document.querySelector(".autoClickerCost");
+const resetGameButton = document.querySelector(".resetGameButton");
 
-const updateGame = () => {
+updateGame = () => {
   donutCountElement.innerText = donutCount;
   autoClickerCountElement.innerText = autoClickerCount;
-  autoClickerCostElement.innerText = autoClickerCost + "Donuts";
+  autoClickerCostElement.innerText =
+    "Auto Clicker Cost: " + autoClickerCost + " Donuts";
 
   if (donutCount >= autoClickerCost) {
     autoClickerButton.style.backgroundcolor = "white";
