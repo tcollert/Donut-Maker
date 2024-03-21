@@ -1,81 +1,7 @@
 let donutCount = 0;
-let autoClickCount = 0;
-let autoClickPrice = 10;
-let donutClicks = 1;
-
-function addDonut() {
-  if (autoClickCount == 0) {
-    donutCount += 1;
-  } else {
-    donutCount += autoClickCount;
-  }
-}
-
-function addAutoDonut() {
-  if (donutCount >= autoClickCount) {
-    autoClickCount += 1;
-    donutCount -= autoClickCount;
-  } else {
-    console.log("You need at least 100 donuts to purchase an auto click");
-  }
-}
-
-function resetGame() {
-  donutCount = 0;
-  autoClickCount = 0;
-  autoClickPrice = 100;
-  donutClicks = 1;
-}
-
-const countDonutsElement = document.querySelector(".donut-maker");
-const addDonutsButton = document.querySelector(".donut-button");
-const autoClickElement = document.querySelector(".auto-clicker");
-const autoClickButton = document.querySelector("purchase-button");
-const autoClickerCost = document.querySelector("price");
-const resetButton = document.querySelector("reset-button");
-
-function updateGame(){
-  countDonutsElement.innerText = donutCount;
-  autoClickElement.innerText = autoClickCount;
-  autoClickerCost.innerText = autoClickPrice + "Donuts";
-
-  if (donutCount >= autoClickPrice) {
-    autoClickButton.style.backgroundcolor = "white";
-  } else {
-    autoClickButton.style.backgroundcolor = "grey";
-  }
-}
-
-const clickDonutButton = function(button){
-  button.addEventListener("click", () => {
-    addDonut();
-    updateGame();
-  });
-};
-
-const clickAutoClickButton = function(button) {
-  button.addEventListener("click", () => {
-    addAutoClicker();
-    updateGame();
-  });
-};
-
-const clickResetButton = function(button) {
-  button.addEventListener("click", () => {
-    resetGame();
-    updateGame();
-  });
-};
-
-function countUp() {
-  donutCount += autoClickCount;
-  updateGame();
-}
-setInterval(countUp, 1000);
-
-clickDonutButton(donutButton);
-clickAutoClickButton(autoClickButton);
-clickResetButton(resetButton);
+let autoClickerCount = 0;
+let autoClickerCost = 10;
+let donutsPerClick = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
   const developerLink = document.getElementById("developer-dropdown");
@@ -100,3 +26,63 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+addDonut = () => {
+  donutCount += 1;
+};
+
+addAutoClicker = () => {
+  if (donutCount >= autoClickerCost) {
+    autoClickerCount += 1;
+    donutCount -= autoClickerCost;
+  } else {
+    console.log("You need at least 100 donuts to purchase an auto click");
+  }
+};
+
+const resetGame = () => {
+  donutCount = 0;
+  autoClickerCount = 0;
+  autoClickerCost = 100;
+  donutsPerClick = 1;
+};
+
+const donutCountElement = document.querySelector(".donutCount");
+const donutButton = document.querySelector(".donutButton");
+const autoClickerCountElement = document.querySelector(".autoClickerCount");
+const autoClickerButton = document.querySelector("autoClickerButton");
+const autoClickerCostElement = document.querySelector("autoClickerCost");
+const resetGameButton = document.querySelector("resetGameButton");
+
+const updateGame = () => {
+  donutCountElement.innerText = donutCount;
+  autoClickerCountElement.innerText = autoClickerCount;
+  autoClickerCostElement.innerText = autoClickerCost + "Donuts";
+
+  if (donutCount >= autoClickerCost) {
+    autoClickerButton.style.backgroundcolor = "white";
+  } else {
+    autoClickerButton.style.backgroundcolor = "grey";
+  }
+};
+
+donutButton.addEventListener("click", () => {
+  addDonut();
+  updateGame();
+});
+
+autoClickerButton.addEventListener("click", () => {
+  addAutoClicker();
+  updateGame();
+});
+
+resetGameButton.addEventListener("click", () => {
+  resetGame();
+  updateGame();
+});
+
+function countUp() {
+  donutCount += autoClickerCount;
+  updateGame();
+}
+setInterval(countUp, 1000);

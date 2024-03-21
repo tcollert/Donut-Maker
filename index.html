@@ -8,9 +8,9 @@
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container">
-      <img src="./img/AdobeStock_451004451 (1).jpeg" />
-      <header class="headline">
+    <header>
+      <div class="donuts">
+        <img src="./img/AdobeStock_451004451 (1).jpeg" />
         <h1>Fred the Baker Baking Company</h1>
         <nav class="header-nav">
           <ul>
@@ -46,7 +46,6 @@
             </p>
           </div>
         </div>
-
         <div class="modal" id="developer-modal">
           <div class="modal-content">
             <h2>About the Developer</h2>
@@ -62,24 +61,30 @@
             </ul>
           </div>
         </div>
-      </header>
-      <container>
-        <div class="box box-1"></div>
-        <div class="donut-maker" height="100" width="60">
-          <button class="donut-button">Make Donuts</button>
-          <h2>Amount of Donuts Made</h2>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+        <div class="donutCount">
+          <button class="donutButton">Make Donuts</button>
+          <h2 id="amount">Amount of Donuts Made</h2>
         </div>
-        <div class="auto-clicker">
-          <button class="purchase-button">Purchase Auto Clicker</button>
-          <h2 class="display-price">One Auto Clicker = 100 Donuts</h2>
+      </section>
+      <section>
+        <div class="autoClickers">
+          <div class="autoClickerCount"></div>
+          <div class="autoClickerCost"></div>
+          <button class="autoClickerButton">Purchase Auto Clicker</button>
         </div>
+      </section>
+      <section>
         <div class="reset">
-          <button class="reset-button">Reset</button>
+          <button class="resetGameButton">Reset</button>
           <h2>Reset Game</h2>
         </div>
-      </container>
+      </section>
+      <footer class="copyright">Copyright &copy; 2024</footer>
     </div>
-    <footer class="copyright">Copyright &copy; 2024</footer>
     <script src="./index.js"></script>
   </body>
 </html>
