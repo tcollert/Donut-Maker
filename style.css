@@ -226,7 +226,6 @@ table.table tr td {
   -webkit-text-stroke: ivory;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 3;
-  background: url(../../images/BlackTile.png);
   padding: 1em;
   border: 2px solid ivory;
   cursor: pointer;
@@ -265,7 +264,6 @@ table.table tr td {
   color: ivory;
   padding: 1em;
   cursor: pointer;
-  background: url(../../images/TransparentTile.png);
   -moz-box-shadow: 0 0 5px grey;
   -webkit-box-shadow: 0 0 5px grey;
   box-shadow: 0 0 5px grey;
