@@ -1,6 +1,6 @@
 let donutCount = 0;
 let autoClickerCount = 0;
-let autoClickerCost = 10;
+let autoClickerCost = 100;
 let donutsPerClick = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
