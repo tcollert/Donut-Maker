@@ -1,105 +1,107 @@
-.headline > h1 {
-  grid-area: headline;
-  text-align: center;
-  position: relative;
-  bottom: 750px;
-  color: rgb(0, 60, 128);
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+* {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.button {
-  background-color: #000000;
-  color: #ffffff;
-  float: right;
-  padding: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  z-index: 3;
-}
-
-.donut-maker {
-  text-align: center;
-  position: relative, center;
-  bottom: 500;
-  color: rgb(11, 14, 45);
-  -webkit-text-stroke: 1px rgb(37, 40, 68);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  z-index: 3;
-}
-.donut-button {
-  text-align: center;
-  position: relative, center;
-  bottom: 5000;
-  color: rgb(11, 14, 45);
-  -webkit-text-stroke: 1px rgb(37, 40, 68);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  z-index: 3;
-}
-
-.auto-clicker {
-  text-align: center;
-  position: relative;
-  bottom: 100%;
-  color: rgb(11, 14, 45);
-  -webkit-text-stroke: 1px rgb(37, 40, 68);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  z-index: 4;
-}
-
-.purchase-button {
-  text-align: center;
-  position: relative;
-  color: rgb(11, 14, 45);
-  -webkit-text-stroke: 1px rgb(37, 40, 68);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  z-index: 3;
-  bottom: 800px;
-}
-.reset {
-  text-align: center;
-  position: relative;
-  bottom: 900px;
-  color: rgb(11, 14, 45);
-  -webkit-text-stroke: 1px rgb(37, 40, 68);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  z-index: 3;
-}
-.container > img {
-  height: 25%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  size: cover;
-  top: 0px;
-  z-index: -1;
-}
-.header-nav {
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 1em;
-  margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f0009c;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  position: relative;
-  top: -900px;
-  size: cover;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
+  line-height: 1.618em;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-li {
-  display: inline-block;
-  margin-right: 20px;
+html {
+  font-size: 16px;
+  margin-top: 2.5em;
+  color: ivory;
+  background: img("./img/AdobeStock_451004451 (1).jpeg") no-repeat center center
+    fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.donuts > img {
+  position: fixed;
+  top: 0;
+  left: -0.5em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  border: 2px transparent ivory;
+  background: url(../../images/BlackTile.png);
+  z-index: -2;
+}
+
+.donuts div {  
+  padding: 0.5em 2em;
+  text-size-adjust: large;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.5em;
+  max-width: 1000px;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-row-gap: 0.5em;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+  background: url(../../images/TransparentTile.png);
+  background-color: rgba(250, 63, 175, 0.9);
+  padding-top: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -moz-box-shadow: 0 0 20px #000000;
+  -webkit-box-shadow: 0 0 20px #000000;
+  box-shadow: 0 0 20px #000000;
+}
+
+table.table {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+table.table tr td {
+  padding: 5px;
+  line-height: 3.5cm;
+  font-size: large;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  position: relative;
+  top: -133px;
+  size: cover;
+  color: white;
+  width: 300%;
+  right: 100%;
+  justify-content: center;
 }
 
 .header-link {
@@ -117,21 +119,22 @@ li {
   background-color: #32142c;
 }
 
-.box {
-  height: 100px;
-  width: 100px;
-  z-index: 1;
+.donuts > h1 {
+  text-align: center;
+  position: relative;
+  bottom: -40px;
+  left: 9px;
+  font-size: xxx-large;
+  color: rgb(0, 60, 128);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.box-1 {
-  position: relative;
-  background-color: hsl(327, 93%, 59%);
-  z-index: 1;
-  bottom: 735px;
-  left: 560px;
-  width: 500px;
-  height: 375px;
-  border-radius: 10px;
+@media only screen and (max-width: 600px) {
+  .header-nav {
+    font-size: 0.5em;
+    padding: 0;
+  }
 }
 
 .modal {
@@ -166,33 +169,146 @@ li {
   margin-bottom: 15px;
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #666;
-  font-size: 20px;
-}
-
-.close-button:hover {
-  color: #333;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  border: 1px #3d3d3d solid;
-  padding: 0.5rem;
-  position: relative;
-}
 .copyright {
   border: 1px #190d41 solid;
-  padding: 0.5rem;
+  padding: 0.4rem;
   grid-area: copyright;
   text-align: center;
   position: relative;
-  bottom: 680px;
+  bottom: -45px;
+  width: 300%;
+  size: cover;
+  justify-content: center;
+}
+
+.autoClickerCost {
+  text-align: center;
+  position: relative;
+  bottom: 330px;
+  color: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+  padding: 0.5em;
+  font-size: large;
+}
+.donutCount {
+  text-align: center;
+  position: relative;
+  bottom: 390px;
+  color: ivory;
+  -webkit-text-stroke: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+  font-size: x-large;
+}
+.donutButton {
+  text-align: center;
+  position: relative;
+  bottom: 432px;
+  color: ivory;
+  -webkit-text-stroke: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+  background: url(../../images/BlackTile.png);
+  padding: 1em;
+  border: 2px solid ivory;
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px grey;
+  -webkit-box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px grey;
+}
+
+.button {
+  text-align: center;
+  position: relative;
+  bottom: 130px;
+  color: ivory;
+  -webkit-text-stroke: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+}
+
+.autoClickerCount {
+  text-align: center;
+  position: relative;
+  bottom: 335px;
+  color: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 4;
+  font-size: x-large;
+}
+
+.autoClickerButton {
+  text-align: center;
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+  bottom: 517px;
+  border: 2px solid ivory;
+  color: ivory;
+  padding: 1em;
+  cursor: pointer;
+  background: url(../../images/TransparentTile.png);
+  -moz-box-shadow: 0 0 5px grey;
+  -webkit-box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px grey;
+}
+
+.reset {
+  text-align: center;
+  position: relative;
+  bottom: 335px;
+  color: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.autoClickers {
+  padding: 1em;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.autoClickerButton:hover {
+  -moz-box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+}
+
+.resetGameButton {
+  border: 2px solid ivory;
+  color: ivory;
+  padding: 1em;
+  cursor: pointer;
+  background: url(../../images/TransparentTile.png);
+  -moz-box-shadow: 0 0 5px grey;
+  -webkit-box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px grey;
+  bottom: -100px;
+  z-index: 3;
+}
+
+.donutButton:hover {
+  background-color: #000000;
+  -moz-box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+}
+
+.resetGameButton:hover {
+  background-color: lightgrey;
+  color: black;
 }

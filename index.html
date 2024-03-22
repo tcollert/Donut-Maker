@@ -8,10 +8,11 @@
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container">
-      <img src="./img/AdobeStock_451004451 (1).jpeg" />
-      <header class="headline">
+    <header>
+      <div class="donuts">
+        <img src="./img/AdobeStock_451004451 (1).jpeg" />
         <h1>Fred the Baker Baking Company</h1>
+        <div></div>
         <nav class="header-nav">
           <ul>
             <li>
@@ -46,7 +47,6 @@
             </p>
           </div>
         </div>
-
         <div class="modal" id="developer-modal">
           <div class="modal-content">
             <h2>About the Developer</h2>
@@ -62,24 +62,42 @@
             </ul>
           </div>
         </div>
-      </header>
-      <container>
-        <div class="box box-1"></div>
-        <div class="donut-maker" height="100" width="60">
-          <button class="donut-button">Make Donuts</button>
-          <h2>Amount of Donuts Made</h2>
+      </div>
+    </header>
+      <section>
+        <div>
+          <div class="container">
+            <div class="table-container">
+              <table class="table">
+                <tr>
+                  <td class="tg-yw4l">Amount of Donuts Made</td>
+                </tr>
+                <tr>
+                  <td>Auto Clicker Count</td>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">Reset Game</td>
+                </tr>
+              </table>
+          <button class="donutButton">Make Donuts</button>
+          <div class="donutCount"></div>
+          </div>
         </div>
-        <div class="auto-clicker">
-          <button class="purchase-button">Purchase Auto Clicker</button>
-          <h2 class="display-price">One Auto Clicker = 100 Donuts</h2>
+      </div>
+      </section>
+      <section>
+        <div class="autoClickers">
+          <div class="autoClickerCount"></div>
+          <div class="autoClickerCost"></div>
+          <button class="autoClickerButton">Purchase Auto Clicker</button>
         </div>
+      </section>
+      <section>
         <div class="reset">
-          <button class="reset-button">Reset</button>
-          <h2>Reset Game</h2>
+          <button class="resetGameButton">Reset</button>  
         </div>
-      </container>
-    </div>
-    <footer class="copyright">Copyright &copy; 2024</footer>
+      </section>
+      <footer class="copyright">Copyright &copy; 2024</footer>
     <script src="./index.js"></script>
   </body>
 </html>
