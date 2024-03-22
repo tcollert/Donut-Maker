@@ -38,7 +38,8 @@ body {
   align-items: center;
   font-size: x-large;
   border: 10em transparent ivory;
-  background: url(../../images/BlackTile.png);
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   z-index: -2;
 }
 
@@ -60,7 +61,7 @@ body {
   padding-left: 7.5em;
   padding-right: 7.5em;
   display: grid;
-  background: url(../../images/TransparentTile.png);
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   background-color: rgba(250, 63, 175, 0.9);
   padding-top: 1.5em;
   text-transform: uppercase;
@@ -229,7 +230,8 @@ table.table tr td {
   padding: 1em;
   border: 2px solid ivory;
   cursor: pointer;
-  -moz-box-shadow: 0 0 5px grey;
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   -webkit-box-shadow: 0 0 5px grey;
   box-shadow: 0 0 5px grey;
 }
@@ -264,6 +266,8 @@ table.table tr td {
   color: ivory;
   padding: 1em;
   cursor: pointer;
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   -moz-box-shadow: 0 0 5px grey;
   -webkit-box-shadow: 0 0 5px grey;
   box-shadow: 0 0 5px grey;
@@ -309,7 +313,8 @@ li {
   color: ivory;
   padding: 1em;
   cursor: pointer;
-  background: url(../../images/TransparentTile.png);
+  background-color: #f0009c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   -moz-box-shadow: 0 0 5px grey;
   -webkit-box-shadow: 0 0 5px grey;
   box-shadow: 0 0 5px grey;
