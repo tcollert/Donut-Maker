@@ -10,7 +10,7 @@ html {
   font-size: 16px;
   margin-top: 2.5em;
   color: ivory;
-  background: img("./img/AdobeStock_451004451 (1).jpeg") no-repeat center center
+  background: img("./img/Donuts.jpg") no-repeat center center
     fixed;
   background-size: cover;
   display: flex;
@@ -38,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: x-large;
-  border: 2px transparent ivory;
+  border: 10em transparent ivory;
   background: url(../../images/BlackTile.png);
   z-index: -2;
 }
@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 6em;
+  margin: 7.5em;
   max-width: 1000px;
   grid-template-rows: repeat(auto, 1fr);
   grid-row-gap: 0.5em;
@@ -123,15 +123,26 @@ table.table tr td {
 
 .donuts > h1 {
   position: absolute;
-  top: 10%;
+  top: 7%;
   width: 100%;
   text-align: center;
-  font-size: 18px;
   text-align: center;
   left: 9px;
-  font-size: xxx-large;
+  font-size: 5em;
   color: rgb(0, 60, 128);
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.donuts > h2 {
+  position: absolute;
+  top: 18.75%;
+  width: 100%;
+  text-align: center;
+  text-align: center;
+  left: 9px;
+  font-size: x-large;
+  color: #f0009c;
+  -webkit-text-stroke: 1px ivory;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -191,7 +202,7 @@ table.table tr td {
 .autoClickerCost {
   text-align: center;
   position: relative;
-  bottom: 395px;
+  bottom: 412px;
   color: ivory;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 3;
@@ -238,7 +249,7 @@ table.table tr td {
 .autoClickerCount {
   text-align: center;
   position: relative;
-  bottom: 400px;
+  bottom: 415px;
   color: ivory;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 4;
@@ -250,7 +261,7 @@ table.table tr td {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 3;
-  bottom: 578px;
+  bottom: 605px;
   border: 2px solid ivory;
   color: ivory;
   padding: 1em;
@@ -264,7 +275,7 @@ table.table tr td {
 .reset {
   text-align: center;
   position: relative;
-  bottom: 390px;
+  bottom: 412px;
   color: ivory;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 3;
