@@ -10,8 +10,7 @@ html {
   font-size: 16px;
   margin-top: 2.5em;
   color: ivory;
-  background: img("./img/Donuts.jpg") no-repeat center center
-    fixed;
+  background: img("./img/Donuts.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -43,7 +42,7 @@ body {
   z-index: -2;
 }
 
-.donuts div {  
+.donuts div {
   padding: 0.5em 2em;
   text-size-adjust: large;
 }
